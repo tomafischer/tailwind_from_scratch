@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- <link rel="stylesheet" href="css/output.css" /></head> -->
+  <body>
+    <h2>Display block</h2>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Link to docu</a>
+    <p>The two values most important for our discussion of layout are display: flex and display: grid.</p>
+    <div style=" border-style: solid; border-color: red;">
+        <div style="display: block;  border-style: solid; border-color: blue;">First</div>
+        <div style="display: block; border-style: solid; border-color: blue;">Second</div>
+        <div style="display: block; border-style: solid; border-color: blue;">Third</div>
+    </div>
+
+    <h2>Display inline</h2>
+    <div style=" border-style: solid; border-color: red;">
+        <div style="display: inline;  border-style: solid; border-color: blue;">First</div>
+        <div style="display: inline; border-style: solid; border-color: blue;">Second</div>
+        <div style="display: inline; border-style: solid; border-color: blue;">Third</div>
+    </div>
+
+
+    <h2>Display flex</h2>
+    <div style="display:flex; border-style: solid; border-color: red; ">
+        <div style="display: flex;  border-style: solid; border-color: blue;">First</div>
+        <div style="display: flex; border-style: solid; border-color: blue;">Second</div>
+        <div style="display: flex; border-style: solid; border-color: blue;">Third</div>
+    </div>
+    <h2>Display flex</h2>
+    Designed for one-dimensional layout 
+    However, if we add <code>display: flex </code>to the parent, the three items now arrange themselves into columns. This is due to them becoming flex items and being affected by some initial values that flexbox sets on the flex container. They are displayed in a row because the property flex-direction of the parent element has an initial value of row. They all appear to stretch in height because the property align-items of their parent element has an initial value of stretch. This means that the items stretch to the height of the flex container, which in this case is defined by the tallest item. The items all line up at the start of the container, leaving any extra space at the end of the row.
+    <div style="display:flex; border-style: solid; border-color: red;">
+        <div style="flex:3;  border-style: solid; border-color: blue;">First flex:3</div>
+        <div style="flex:1; border-style: solid; border-color: blue;">Second flex:1</div>
+        <div style="flex:2; border-style: solid; border-color: blue;">Third flex:2</div>
+    </div>
+
+    <h2>Display inline flex</h2>
+    <div style=" border-style: solid; border-color: red;">
+        <div style="display: inline-flex;  border-style: solid; border-color: blue;">First</div>
+        <div style="display: inline-flex; border-style: solid; border-color: blue;">Second</div>
+        <div style="display: inline-flex; border-style: solid; border-color: blue;">Third</div>
+    </div>
+    <h2>Display grid</h2>
+    <div style=" border-style: solid; border-color: red;">
+        <div style="display: grid;  border-style: solid; border-color: blue;">First</div>
+        <div style="display: grid; border-style: solid; border-color: blue;">Second</div>
+        <div style="display: grid; border-style: solid; border-color: blue;">Third</div>
+    </div>
+    <h2>Display float</h2>
+    <div style=" border-style: solid; border-color: red;">
+        <div style="float: left; width:150px; height:50px;  border-style: solid; border-color: blue;">Float</div>
+        <p>There is lots of text here the three items now arrange themselves into columns. This is due to them becoming flex items and being affected by  now arrange themselves into columns. This is due to them becoming flex items and being affected</p>
+        <div style="display: inline; border-style: solid; border-color: blue;">Second</div>
+        <div style="display: inline; border-style: solid; border-color: blue;">Third</div>
+    </div>
+
+    <div>
+
+    </div>
+  </body>
+</html>
