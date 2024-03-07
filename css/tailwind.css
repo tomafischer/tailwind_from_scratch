@@ -2,7 +2,7 @@
 @tailwind components;
 
 .btn {
-  @applyinline-bock px-5 py-3 rounded-lg shadow-lg text-sm bg-indigo-500 0 -none  text-white uppercase tracking-wider font-semibold ;
+  @apply inline-block px-5 py-3 rounded-lg shadow-lg text-sm bg-brand-blue text-white uppercase tracking-wider font-semibold ;
 }
 .btn:hover{
   @apply bg-indigo-400
@@ -18,5 +18,6 @@
     @apply text-base
   }
 } 
+
 
 @tailwind utilities;
